@@ -14,7 +14,7 @@ contentContoller.getcontent = async (req, res) => {
 contentContoller.addcontent = async (req, res) => {
   try {
     const contentData = {
-      content: req.body.content,
+      description: req.body.content,
       category: req.body.category
     }
     const response = await contentUtils.addcontentData(contentData);
